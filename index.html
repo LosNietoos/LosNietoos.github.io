@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Firebase Auth Test</title>
+</head>
+<body>
+    <h1>Prueba de Firebase con Autenticación</h1>
+
+    <div id="userInfo" style="display:none;">
+        <p>Bienvenido, <span id="userName"></span> (<span id="userEmail"></span>)</p>
+        <input type="text" id="dataInput" placeholder="Escribe algo..." />
+        <button onclick="guardarDato()">Guardar en Firebase</button>
+        <br /><br />
+        <button onclick="logout()">Cerrar sesión</button>
+    </div>
+
+    <div id="loginSection">
+        <button onclick="login()">Iniciar sesión con Google</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
